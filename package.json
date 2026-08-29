@@ -1,0 +1,24 @@
+{
+  "name": "shinden-controller",
+  "version": "1.0.0",
+  "description": "Web plugin that enable controlling shinden anime site via keys/hotkeys",
+  "main": "shinden-controller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakulej/shinden-controller.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jakulej/shinden-controller/issues"
+  },
+  "homepage": "https://github.com/jakulej/shinden-controller#readme",
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}

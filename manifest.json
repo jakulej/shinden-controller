@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "shinden-controller",
+  "version": "1.0",
+
+  "description": "Enable controlling shinden with shortcuts",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.shinden.pl/*"],
+      "js": ["shinden-controller.js"]
+    }
+  ]
+}
