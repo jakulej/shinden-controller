@@ -8,7 +8,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.shinden.pl/*"],
-      "js": ["shinden-controller.js"]
+      "js": ["dist/shinden-controller.js"]
     }
   ]
 }
