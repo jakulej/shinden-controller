@@ -8,7 +8,17 @@
   "content_scripts": [
     {
       "matches": ["*://*.shinden.pl/*"],
-      "js": ["dist/shinden-controller.js"]
+      "js": ["dist/shinden-controller.js"],
+      "all_frames": true
+    },
+    {
+      "matches": ["https://vk.com/*"],
+      "js": ["dist/vk.js"],
+      "all_frames": true
     }
+  ],
+  "host_permissions":[
+    "*://*.shinden.pl/*",
+    "https://vk.com/*"
   ]
 }

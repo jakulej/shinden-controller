@@ -4,8 +4,10 @@
   "description": "Web plugin that enable controlling shinden anime site via keys/hotkeys",
   "main": "shinden-controller.js",
   "scripts": {
-    "build": "esbuild src/shinden-controller.js --bundle --outfile=dist/shinden-controller.js",
-    "watch": "esbuild src/shinden-controller.js --bundle --outfile=dist/shinden-controller.js --watch"
+    "build": "npm run build:shinden && npm run build:vk",
+    "build:shinden": "esbuild src/shinden-controller/shinden-controller.js --bundle --outfile=dist/shinden-controller.js",
+    "build:vk": "esbuild src/players/vk-player.js --bundle --outfile=dist/vk-player.js",
+    "watch": "npm run build:shinden && npm run build:vk"
   },
   "repository": {
     "type": "git",
