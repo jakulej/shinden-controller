@@ -20,9 +20,7 @@ export default class TaskController {
 
     run_task(taskName, step) {
         while (step!=null) {
-            console.log("Runing: ",taskName,", Step: ",step)
             step = this.tasks[taskName].run(step)
-            console.log("Step: ", step);
         }
     }
 
